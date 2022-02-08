@@ -3,7 +3,7 @@ module.exports = function (server) {
     //route About
     server.route({
         method: 'GET',
-        path: '/calculadora/about',
+        path: '/api/calculadora/about',
         handler: function (pedido) {
 
             var data = {
@@ -17,7 +17,7 @@ module.exports = function (server) {
     //route Soma
     server.route({
         method: 'GET',
-        path: '/calculadora/soma/{num1}/{num2}',
+        path: '/api/calculadora/soma/{num1}/{num2}',
         handler: function (pedido) {
 
             const num1 = parseInt(pedido.params.num1);
@@ -34,7 +34,7 @@ module.exports = function (server) {
     //route Subtração
     server.route({
         method: 'GET',
-        path: '/calculadora/sub/{num1}/{num2}',
+        path: '/api/calculadora/sub/{num1}/{num2}',
         handler: function (pedido) {
 
             const num1 = parseInt(pedido.params.num1);
@@ -50,7 +50,7 @@ module.exports = function (server) {
     //route Multiplicação
     server.route({
         method: 'GET',
-        path: '/calculadora/multi/{num1}/{num2}',
+        path: '/api/calculadora/multi/{num1}/{num2}',
         handler: function (pedido) {
 
             const num1 = parseInt(pedido.params.num1);
@@ -67,7 +67,7 @@ module.exports = function (server) {
     //route Divisão
     server.route({
         method: 'GET',
-        path: '/calculadora/div/{num1}/{num2}',
+        path: '/api/calculadora/div/{num1}/{num2}',
         handler: function (pedido) {
 
             const num1 = parseInt(pedido.params.num1);
