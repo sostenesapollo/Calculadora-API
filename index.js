@@ -2,11 +2,11 @@
 const Hapi = require('hapi');
 // Máquina e Porto Lógico
 const host = 'localhost';
-const port = 3001;
+const port = 3002;
 // Criação do Servidor
 const server = Hapi.Server({
     host: host,
-    port: port
+    port: port || process.env.PORT
 });
 // Iniciar servidor
 const init = async () => {
